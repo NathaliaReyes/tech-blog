@@ -35,5 +35,5 @@
       "radix": "off"
     },
     "extends": ["prettier"]
-  }
+}
   
