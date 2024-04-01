@@ -1,0 +1,24 @@
+<div class="row mb-4 post">
+  <div class="col-12">
+    <h2>
+      <a href="/post/{{id}}">{{title}}</a>
+      <span>Posted by {{user.name}} on {{format_date created_at}}</span>
+    </h2>
+  </div>
+  <div class="col-12">
+    <p>
+      {{content}}
+    </p>
+  </div>
+<div>
+
+<h4>Comments Section</h2>
+{{#each comments as |comment|}}
+  <div class="row mb-4 comment">
+    <div class="col-12">
+      <h6>{{comment.user.name}}</h3>
+      <p>{{comment.content}}</p>
+    </div>
+  </div>
+{{/each}}
+    
