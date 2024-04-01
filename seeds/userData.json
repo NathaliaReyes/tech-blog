@@ -1,0 +1,34 @@
+[
+    {
+        "name": "JohnDoe",
+        "password": "Password123"
+    },
+    {
+        "name": "JaneSmith",
+        "password": "SecurePass"
+    },
+    {
+        "name": "MichaelJohnson",
+        "password": "Strong123"
+    },
+    {
+        "name": "EmilyBrown",
+        "password": "Brownie21"
+    },
+    {
+        "name": "DanielWilliams",
+        "password": "DannyW123"
+    },
+    {
+        "name": "SarahTaylor",
+        "password": "Taylor88!"
+    },
+    {
+        "name": "ChristopherLee",
+        "password": "LeeChris1"
+    },
+    {
+        "name": "AmandaClark",
+        "password": "Clarky!23"
+    }
+]

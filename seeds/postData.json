@@ -1,0 +1,74 @@
+[
+    {
+        "title": "The Rise of Artificial Intelligence in Healthcare",
+        "content": "Discover how artificial intelligence is revolutionizing the healthcare industry, from personalized treatment plans to predictive analytics.",
+        "created_at": "2024-03-31",
+        "user_id": 1
+    },
+    {
+        "title": "The Future of Self-Driving Cars",
+        "content": "Explore the latest advancements in autonomous vehicle technology and the potential impact on transportation and society.",
+        "created_at": "2024-03-30",
+        "user_id": 2
+    },
+    {
+        "title": "Cybersecurity Trends for 2024",
+        "content": "Learn about the emerging cybersecurity trends and strategies organizations need to adopt to protect against evolving cyber threats.",
+        "created_at": "2024-03-29",
+        "user_id": 3
+    },
+    {
+        "title": "The Role of Big Data in Business Innovation",
+        "content": "Discover how big data analytics is driving innovation across various industries, from marketing to supply chain management.",
+        "created_at": "2024-03-28",
+        "user_id": 5
+    },
+    {
+        "title": "Exploring Quantum Computing Applications",
+        "content": "Gain insights into the practical applications of quantum computing and its potential to revolutionize fields such as cryptography and drug discovery.",
+        "created_at": "2024-03-27",
+        "user_id": 4
+    },
+    {
+        "title": "The Impact of 5G Technology on IoT",
+        "content": "Learn how the rollout of 5G networks is accelerating the adoption of Internet of Things (IoT) devices and reshaping connectivity in smart cities and industries.",
+        "created_at": "2024-03-26",
+        "user_id": 8
+    },
+    {
+        "title": "Augmented Reality: Bridging the Physical and Digital Worlds",
+        "content": "Explore the transformative potential of augmented reality technology in enhancing human experiences across industries such as education, gaming, and retail.",
+        "created_at": "2024-03-21",
+        "user_id": 7
+    },
+    {
+        "title": "Advancements in Renewable Energy Technologies",
+        "content": "Discover the latest breakthroughs in renewable energy technologies, including solar, wind, and hydrogen fuel cells, and their role in combating climate change.",
+        "created_at": "2024-03-24",
+        "user_id": 4
+    },
+    {
+        "title": "The Evolution of E-Commerce Platforms",
+        "content": "Learn about the evolution of e-commerce platforms and the technologies driving seamless online shopping experiences, from AI-powered recommendations to blockchain-based supply chains.",
+        "created_at": "2024-03-23",
+        "user_id": 3
+    },
+    {
+        "title": "Artificial Intelligence in Finance: Opportunities and Challenges",
+        "content": "Explore the applications of artificial intelligence in the finance industry, including algorithmic trading, risk management, and customer service, as well as the ethical considerations and challenges.",
+        "created_at": "2024-03-22",
+        "user_id": 1
+    },
+    {
+        "title": "The Future of Work: Remote Collaboration Tools",
+        "content": "Discover how remote collaboration tools powered by artificial intelligence and augmented reality are reshaping the future of work, enabling seamless communication and productivity across distributed teams.",
+        "created_at": "2024-03-21",
+        "user_id": 8
+    },
+    {
+        "title": "Biotechnology Innovations: Advancing Healthcare and Beyond",
+        "content": "Learn about the latest biotechnology innovations revolutionizing healthcare, agriculture, and environmental sustainability, from gene editing to synthetic biology.",
+        "created_at": "2024-03-20",
+        "user_id": 6
+    }
+]

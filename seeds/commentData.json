@@ -1,0 +1,62 @@
+[
+    {
+        "content": "Great article! It's amazing to see how technology is shaping our future.",
+        "created_at": "2024-04-01",
+        "user_id": 8,
+        "post_id": 1
+    },
+    {
+        "content": "I found this very informative. Thanks for sharing!",
+        "created_at": "2024-04-01",
+        "user_id": 1,
+        "post_id": 2
+    },
+    {
+        "content": "Interesting read. I'm excited to see what's next in the world of cybersecurity.",
+        "created_at": "2024-04-01",
+        "user_id": 3,
+        "post_id": 3
+    },
+    {
+        "content": "This topic is fascinating! I never knew much about quantum computing until now.",
+        "created_at": "2024-04-01",
+        "user_id": 4,
+        "post_id": 4
+    },
+    {
+        "content": "I've always been curious about augmented reality. Thanks for the insights!",
+        "created_at": "2024-03-31",
+        "user_id": 5,
+        "post_id": 5
+    },
+    {
+        "content": "As someone who loves online shopping, I appreciate the advancements in AI-powered recommendations.",
+        "created_at": "2024-04-01",
+        "user_id": 6,
+        "post_id": 6
+    },
+    {
+        "content": "This article opened my eyes to the potential of renewable energy. Great read!",
+        "created_at": "2024-04-01",
+        "user_id": 7,
+        "post_id": 7
+    },
+    {
+        "content": "I'm intrigued by the evolution of e-commerce platforms. Can't wait to see what's next!",
+        "created_at": "2024-04-01",
+        "user_id": 8,
+        "post_id": 8
+    },
+    {
+        "content": "The insights into the future of work are thought-provoking. Thanks for sharing!",
+        "created_at": "2024-04-01",
+        "user_id": 8,
+        "post_id": 9
+    },
+    {
+        "content": "Biotechnology is such an exciting field! I'm excited to see how it progresses.",
+        "created_at": "2024-04-01",
+        "user_id": 2,
+        "post_id": 10
+    }
+]
