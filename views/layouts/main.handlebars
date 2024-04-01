@@ -16,6 +16,8 @@
       <nav class="navbar">
         <!-- Conditionally render login or logout links -->
         {{#if loggedIn}}
+        <a href="/homepage">Home</a>
+        <a href="/profile">Dashboard</a>
         <button class="no-button" id="logout">Logout</button>
         {{else}}
         <a href="/login">Home</a>
@@ -31,18 +33,22 @@
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
+      
     </main>
+    
     <footer>
       <h3>Made with <i class="fa-solid fa-heart"></i> by Silvia Reyes</h2><br>
-        <p>
-            &copy; 2024 Tech Blog. All rights reserved.
-        </p>
+      <p>
+          &copy; 2024 Tech Blog. All rights reserved.
+      </p>
     </footer>
   </div>
 
   <!-- Render script for logged in users only -->
-  {{#if logged_in}}
+  {{#if loggedIn}}
   <script src="/js/logout.js"></script>
+  {{else}}
+  <script src="/js/login.js"></script>
   {{/if}}
 </body>
 
