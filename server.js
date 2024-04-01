@@ -13,7 +13,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
 // This object is creating a session for the user to store their information
 const sess = {
