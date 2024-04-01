@@ -18,12 +18,14 @@ User.init(
         },
         name: {
             type: Datatypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true,
         },
         password: {
             type: Datatypes.STRING,
             allowNull: false,
             validate: {
+                // This means the password must be at least 8 characters long
                 len: [8]
             }
         }
