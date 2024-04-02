@@ -68,7 +68,7 @@ router.get('/profile', withAuth, async (req, res) => {
       });
   
       const user = userData.get({ plain: true });
-      
+
       res.render('profile', {
         ...user,
         loggedIn: true
@@ -76,6 +76,12 @@ router.get('/profile', withAuth, async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
+});
+
+router.get('/new', withAuth, async (req, res) => {
+    res.render('newpost', {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 router.get('/signup', (req, res) => {
