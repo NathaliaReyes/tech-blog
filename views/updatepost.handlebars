@@ -1,0 +1,19 @@
+<div>
+    <form class="form post-form">
+      <div class="form-group">
+        <label for="post-title">Title:</label>
+        <input value="{{title}}" class="form-input" type="text" id="post-title"/>
+        <input value="{{id}}" class="form-input" type="hidden" id="post-id"/>
+
+      </div>
+      <div class="form-group">
+        <label for="post-content">Content:</label>
+        <input value="{{content}}" class="form-input" type="text" id="post-content"/>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Update Post</button>
+      </div>
+    </form>
+</div>
+
+<script src="/js/updatepost.js"></script>
