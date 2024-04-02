@@ -1,4 +1,14 @@
+{{#each users as |user|}}
 <div>
     <h1>FUNCIONA</h1>
-    {{{ post }}}
+    <a href="">
+        <h1>{{title}}</h1>
+        <h3>Created on {{format_date created_at}}</h3>
+    </a>
+
+</div>
+{{/each}}
+
+<div>
+    <button class="btn" type="submit">+ New Post</button>
 </div>
