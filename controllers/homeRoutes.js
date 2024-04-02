@@ -84,6 +84,38 @@ router.get('/new', withAuth, async (req, res) => {
     });
 });
 
+// To edit or delete a post, we need to get the post data
+router.get('/posts/:id', withAuth, async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id, {
+        include: [
+            {
+                model: User,
+                attributes: ['name'],
+            },
+            {
+                model: Comment,
+                attributes: ['content', 'user_id', 'post_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['name'],
+                },
+            },
+        ],
+        });
+    
+        const post = postData.get({ plain: true });
+        console.log(post);
+    
+        res.render('updatepost', {
+        ...post,
+        loggedIn: req.session.loggedIn
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 router.get('/signup', (req, res) => {
     res.render('signup');
 });

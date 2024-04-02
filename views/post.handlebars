@@ -10,6 +10,11 @@
       {{content}}
     </p>
   </div>
+  <!-- Add buttons here -->
+  <div class="col-12">
+    <button class="btn btn-primary" onclick="location.href='/posts/{{id}}'">Update</button>
+    <button class="btn btn-danger" onclick="deletePost({{id}})">Delete</button>
+  </div>
 <div>
 
 <h4>Comments Section</h2>
@@ -24,7 +29,7 @@
     
 
 <div>
-  <form class="form comment-form" data-post-id="{{id}}">
+  <form class="form comment-form " data-post-id="{{id}}">
     <div class="form-group">
       <label for="new-comment">New Comment:</label>
       <textarea class="form-input" id="new-comment" rows="3"></textarea>
