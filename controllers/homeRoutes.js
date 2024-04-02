@@ -59,33 +59,6 @@ router.get('/post/:id', withAuth, async (req, res) => {
     }
 });
 
-router.get('/profile', withAuth, async (req, res) => {
-    try {
-      // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model: Post }],
-      });
-  
-      const user = userData.get({ plain: true });
-      console.log(user);
-
-      res.render('profile', {
-        ...user,
-        loggedIn: true
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-});
-
-router.get('/new', withAuth, async (req, res) => {
-    res.render('newpost', {
-        loggedIn: req.session.loggedIn
-    });
-});
-
-// To edit or delete a post, we need to get the post data
 router.get('/posts/:id', withAuth, async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id, {
@@ -116,6 +89,53 @@ router.get('/posts/:id', withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+router.delete('/posts/:id', withAuth, async (req, res) => {
+  try {
+      const postData = await Post.destroy({
+        where: {
+          id: req.params.id,
+        },
+      });
+  
+      if(!postData) {
+        res.status(404).json({ message: 'No post found with this id!' });
+        return;
+      }
+
+      res.status(200).json(postData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get('/profile', withAuth, async (req, res) => {
+    try {
+      // Find the logged in user based on the session ID
+      const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Post }],
+      });
+  
+      const user = userData.get({ plain: true });
+      console.log(user);
+
+      res.render('profile', {
+        ...user,
+        loggedIn: true
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+});
+
+router.get('/new', withAuth, async (req, res) => {
+    res.render('newpost', {
+        loggedIn: req.session.loggedIn
+    });
+});
+
+// To edit or delete a post, we need to get the post data
 
 router.get('/signup', (req, res) => {
     res.render('signup');

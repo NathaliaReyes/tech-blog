@@ -13,7 +13,7 @@
   <!-- Add buttons here -->
   <div class="col-12">
     <button class="btn btn-primary" onclick="location.href='/posts/{{id}}'">Update</button>
-    <button class="btn btn-danger" onclick="deletePost({{id}})">Delete</button>
+    <button class="btn btn-danger" id="delete-post-button" data-id="{{id}}">Delete Post</button>
   </div>
 <div>
 
@@ -41,3 +41,4 @@
 </div>
 
 <script src="/js/comments.js"></script>
+<script src="/js/deletepost.js"></script>
