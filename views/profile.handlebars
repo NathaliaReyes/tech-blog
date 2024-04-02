@@ -1,10 +1,9 @@
-{{#each users as |user|}}
+{{#each posts as |post|}}
 <div>
-    <h1>FUNCIONA</h1>
-    <a href="">
-        <h1>{{title}}</h1>
-        <h3>Created on {{format_date created_at}}</h3>
+    <a href="/post/{{id}}">
+        <h2>{{title}}</h1>
     </a>
+        <h5>Created on {{format_date created_at}}</h3>
 
 </div>
 {{/each}}

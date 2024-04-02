@@ -67,10 +67,10 @@ router.get('/profile', withAuth, async (req, res) => {
         include: [{ model: Post }],
       });
   
-      const users = userData.get({ plain: true });
-  
+      const user = userData.get({ plain: true });
+      
       res.render('profile', {
-        ...users,
+        ...user,
         loggedIn: true
       });
     } catch (err) {
