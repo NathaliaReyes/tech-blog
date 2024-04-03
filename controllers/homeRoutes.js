@@ -129,11 +129,11 @@ router.get('/profile', withAuth, async (req, res) => {
     }
 });
 
-router.get('/new', withAuth, async (req, res) => {
-    res.render('newpost', {
-        loggedIn: req.session.loggedIn
-    });
-});
+// router.get('/new', withAuth, async (req, res) => {
+//     res.render('newpost', {
+//         loggedIn: req.session.loggedIn
+//     });
+// });
 
 // To edit or delete a post, we need to get the post data
 

@@ -15,6 +15,12 @@ router.post('/new', withAuth, async (req, res) => {
     }
 });
 
+router.get('/new', withAuth, async (req, res) => {
+      res.render('newpost', {
+          loggedIn: req.session.loggedIn
+      });
+  });
+
 router.put('/:id', withAuth, async (req, res) => {
     try {
       const [affectedRows] = await Post.update(req.body, {

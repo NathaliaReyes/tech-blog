@@ -15,12 +15,7 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between">
-      <div class="home">
-          <h1>
-            <span role="img" aria-label="money">🖥️</span>
-            <a href="/">Tech Blog!</a>
-          </h1>
-        </div>
+      
       <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <!-- Conditionally render login or logout links -->
         {{#if loggedIn}}
@@ -33,13 +28,16 @@
         <a class="nav-link" href="/login">Login</a>
         {{/if}}
         
-        
-
-      
       </nav>
 
     </header>
     <main class="container container-fluid mt-5 pt-5">
+      <div class="home mb-4">
+          <h1>
+            <span role="img" aria-label="money">🖥️</span>
+            <a href="/">Tech Blog!</a>
+          </h1>
+        </div>
       <!-- Render the sub layout -->
       {{{ body }}}
       
