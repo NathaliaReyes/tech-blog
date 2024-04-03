@@ -7,20 +7,19 @@ router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
         order: [['created_at', 'DESC']],
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
+        // include: [
+        //     {
+        //         model: User,
+        //         attributes: ['name'],
+        //     },
+        // ],
         });
     
         const posts = postData.map((post) => post.get({ plain: true }));
-        console.log(posts);
     
         res.render('homepage', {
         posts,
-        loggedIn: req.session.loggedIn,
+        loggedIn: req.session.loggedIn, // hace sentido tener esta línea aquí??
         });
     } catch (err) {
         res.status(500).json(err);
@@ -56,6 +55,7 @@ router.get('/post/:id', withAuth, async (req, res) => {
       });
     } catch (err) {
       res.status(500).json(err);
+      console.log(err);
     }
 });
 
@@ -90,25 +90,6 @@ router.get('/posts/:id', withAuth, async (req, res) => {
     }
 });
 
-router.delete('/posts/:id', withAuth, async (req, res) => {
-  try {
-      const postData = await Post.destroy({
-        where: {
-          id: req.params.id,
-        },
-      });
-  
-      if(!postData) {
-        res.status(404).json({ message: 'No post found with this id!' });
-        return;
-      }
-
-      res.status(200).json(postData);
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
-
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
@@ -118,7 +99,6 @@ router.get('/profile', withAuth, async (req, res) => {
       });
   
       const user = userData.get({ plain: true });
-      console.log(user);
 
       res.render('profile', {
         ...user,
@@ -142,10 +122,6 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/profile');
-        return;
-    }
     res.render('login');
 });
 

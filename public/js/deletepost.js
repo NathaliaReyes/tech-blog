@@ -4,10 +4,11 @@ const deletepostFormHandler = async (event) => {
     // Collect values from the login form
     
     const id = event.target.getAttribute('data-id');
+    
 
     if (id) {
     // Send a POST request to the API endpoint
-    const response = await fetch(`/posts/${id}`, { 
+    const response = await fetch(`/api/posts/${id}`, { 
         method: 'DELETE',
         body: JSON.stringify({ id }),
         headers: { 'Content-Type': 'application/json' },
