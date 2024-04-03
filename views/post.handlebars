@@ -1,9 +1,9 @@
-<div class="row mb-4">
+<div class="mb-4">
   <div class="post">
     <div class="col-12">
-      <h2>
+      <h2 class="header-line">
         <a href="/post/{{id}}">{{title}}</a>
-        <span>Posted by {{user.name}} on {{format_date created_at}}</span>
+        <span class="span-tag">Posted by {{user.name}} on {{format_date created_at}}</span>
       </h2>
     </div>
     <div class="col-12">
@@ -14,7 +14,7 @@
 
   </div>
   <!-- Add buttons here -->
-  <div class="col-12 button-container">
+  <div class="button-container">
     <button class="btn" onclick="location.href='/posts/{{id}}'">Update</button>
     <button class="btn" id="delete-post-button" data-id="{{id}}">Delete Post</button>
   </div>

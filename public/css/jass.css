@@ -213,6 +213,18 @@ footer h3 {
 
 }
 
+.span-tag {
+  color: #0442c1;
+  font-size: 20px;
+
+}
+
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btnform {
   cursor: pointer;
   display: inline-block;
@@ -1174,8 +1186,9 @@ footer a i {
   }
 
   .button-container {
+    display: block;
+    margin: 10px auto;
     text-align: center;
-    margin-bottom: 10px;
   }
   
   .btn {
