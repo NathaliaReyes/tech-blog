@@ -1,19 +1,22 @@
-<div class="row mb-4 post">
-  <div class="col-12">
-    <h2>
-      <a href="/post/{{id}}">{{title}}</a>
-      <span>Posted by {{user.name}} on {{format_date created_at}}</span>
-    </h2>
-  </div>
-  <div class="col-12">
-    <p>
-      {{content}}
-    </p>
+<div class="row mb-4">
+  <div class="post">
+    <div class="col-12">
+      <h2>
+        <a href="/post/{{id}}">{{title}}</a>
+        <span>Posted by {{user.name}} on {{format_date created_at}}</span>
+      </h2>
+    </div>
+    <div class="col-12">
+      <p>
+        {{content}}
+      </p>
+    </div>
+
   </div>
   <!-- Add buttons here -->
-  <div class="col-12">
-    <button class="btn btn-primary" onclick="location.href='/posts/{{id}}'">Update</button>
-    <button class="btn btn-danger" id="delete-post-button" data-id="{{id}}">Delete Post</button>
+  <div class="col-12 button-container">
+    <button class="btn" onclick="location.href='/posts/{{id}}'">Update</button>
+    <button class="btn" id="delete-post-button" data-id="{{id}}">Delete Post</button>
   </div>
 <div>
 
@@ -34,8 +37,8 @@
       <label for="new-comment">New Comment:</label>
       <textarea class="form-input" id="new-comment" rows="3"></textarea>
     </div>
-    <div>
-      <button class="btn btn-primary" type="submit">Add Comment</button>
+    <div class="button-container">
+      <button class="btn" type="submit">Add Comment</button>
     </div>
   </form>
 </div>

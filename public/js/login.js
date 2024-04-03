@@ -30,7 +30,7 @@
     // document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
     // const etiquetas = document.querySelectorAll('.form-group label')
     
-    const labels = document.querySelectorAll('.form-group label');
+    const labels = document.querySelectorAll('.form-group-login label');
     labels.forEach(label => {
         label.innerHTML = label.innerText
             .split('')

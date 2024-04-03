@@ -23,7 +23,7 @@ const signupFormHandler = async (event) => {
 document
 .querySelector('.signup-form').addEventListener('submit', signupFormHandler);
 
-const labels = document.querySelectorAll('.form-group label');
+const labels = document.querySelectorAll('.form-group-login label');
     labels.forEach(label => {
         label.innerHTML = label.innerText
             .split('')
