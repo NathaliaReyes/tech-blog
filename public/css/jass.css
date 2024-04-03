@@ -5,51 +5,62 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
- html {
-    line-height: 1.15;
-    /* 1 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
-  }
-  
-  /* Sections
-     ========================================================================== */
-  /**
-   * Remove the margin in all browsers.
-   */
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /**
-   * Render the `main` element consistently in IE.
-   */
-  main {
-    display: block;
-  }
-  
-  /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-  .navbar {
-    background: rgb(238, 199, 190);
-    /* display: inline-block; */
-    /* color: pink; */
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 25px;
-    transition: .3s;
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+/**
+  * Remove the margin in all browsers.
+  */
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  * Render the `main` element consistently in IE.
+  */
+main {
+  display: block;
+}
+
+/**
+  * Correct the font size and margin on `h1` elements within `section` and
+  * `article` contexts in Chrome, Firefox, and Safari.
+  */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.navbar {
+  background: #4c4cb0;
+  /* display: inline-block; */
+  /* color: pink; */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  transition: .3s;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+
 }
 
 .navbar a:hover{
-    color: black;
+    color: rgb(201, 197, 237);
 }
 
 #logout {
@@ -61,14 +72,14 @@
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-  background-color: #007BFF;
+  background-color: #5a1ea9;
   border-radius: 6px;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 #logout:hover {
-  background-color: #0056b3;
+  background-color: #534b5e;
 }
 
 /* --------- HEADER ---------*/
@@ -90,61 +101,87 @@ header {
 
 
 /* --------- FOOTER ---------*/
-/* set icon color to red */
-.fa-heart {
-  color: red;
-}
 
 /* format for footer */
 footer {
   padding: 30px;
   clear: both;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: inherit;
   text-align: center;
-  background: rgb(238, 199, 190);
+  background: #4c4cb0;
 }
 
 /* format for the h3 inside the footer*/
 footer h3 {
   font-size: 20px;
+  color: #fff;
 }
 
 .form-group {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  margin: 0;
   position: relative;
   margin: 20px 0 40px;
-  width: 300px;
+  width: 200px;
+}
+
+.containerform {
+  background-color: #31a9e1;
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin-bottom: 245px; /* revisar este punto */
+  
+}
+
+.containerform h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.containerform a {
+  text-decoration: none;
+  color: rgb(132, 215, 243);
 }
 
 .form-group input {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px #fff solid;
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  font-size: 18px;
-  color: #fff;
-  position: relative;
-  z-index: 100;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px #fff solid !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 15px 0 !important;
+  font-size: 18px !important;
+  color: #fff !important;
+  position: relative !important;
+  z-index: 100 !important;
+  margin-bottom: 40px !important;
 }
 
 .form-group input:focus,
 .form-group input:valid {
-  /* outline: 0; */
+  outline: 0;
   border-bottom-color: lightblue;
 }
 
 .form-group label {
-  /* position: absolute; */
-  top: 15px;
+  position: absolute;
+  top: 5px !important;
   left: 0;
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
 .form-group label span {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   min-width: 5px;
+  left: 0;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -154,16 +191,32 @@ footer h3 {
   transform: translateY(-30px);
 }
 
-.btn {
+.btnform {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: lightblue;
+  background: rgb(170, 204, 216);
   padding: 15px;
-  font-family: inherit;
-  font-size: 16px;
+  font-family: inherit !important;
+  font-size: 20px;
   border: 0;
   border-radius: 5px;
+}
+
+.btnform:focus {
+  outline: 0;
+}
+
+.btnform:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+footer a i {
+  color: #fff;
 }
   /* Grouping content
      ========================================================================== */
