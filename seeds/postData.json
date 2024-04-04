@@ -3,12 +3,24 @@
         "title": "The Rise of Artificial Intelligence in Healthcare",
         "content": "Discover how artificial intelligence is revolutionizing the healthcare industry, from personalized treatment plans to predictive analytics.",
         "created_at": "2024-03-31",
-        "user_id": 1
+        "user_id": 10
     },
     {
         "title": "The Future of Self-Driving Cars",
         "content": "Explore the latest advancements in autonomous vehicle technology and the potential impact on transportation and society.",
         "created_at": "2024-03-30",
+        "user_id": 2
+    },
+    {
+        "title": "Revolutionizing Healthcare: The Role of Telemedicine",
+        "content": "Delve into the transformative potential of telemedicine in healthcare delivery, from remote consultations to virtual monitoring, and its implications for accessibility and patient care.",
+        "created_at": "2024-04-01",
+        "user_id": 2
+    },
+    {
+        "title": "Blockchain Beyond Cryptocurrency: Applications in Supply Chain Management",
+        "content": "Discover how blockchain technology is reshaping supply chain management, from enhancing transparency and traceability to optimizing logistics and reducing fraud.",
+        "created_at": "2024-04-03",
         "user_id": 2
     },
     {
