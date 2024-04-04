@@ -11,7 +11,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 app.get('/favicon.ico', (req, res) => res.status(204));
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5432;
 
 const hbs = exphbs.create({ helpers });
 
