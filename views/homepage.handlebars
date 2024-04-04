@@ -4,13 +4,8 @@
   <div class="col-12">
     <h2 class="header-line">
       <a href="/post/{{post.id}}">{{post.title}}</a>
-      <span class="span-tag">Posted by {{post.user.name}} on {{format_date post.created_at}}</span>
     </h2>
-  </div>
-  <div class="col-12">
-    <p>
-      {{post.content}}
-    </p>
+      <figcaption class="blockquote-footer">Posted by {{post.user.name}} on {{format_date post.created_at}}</figcaption>
   </div>
 </div>
 {{/each}}
