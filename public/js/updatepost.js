@@ -1,6 +1,5 @@
 const updatepostFormHandler = async (event) => {
     event.preventDefault();
-    alert('ALERT!!');
     // Collect values from the login form
     const title = document.querySelector('#post-title').value.trim();
     const content = document.querySelector('#post-content').value.trim();

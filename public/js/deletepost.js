@@ -1,6 +1,5 @@
 const deletepostFormHandler = async (event) => {
     event.preventDefault();
-    alert('ALERT!!');
     // Collect values from the login form
     
     const id = event.target.getAttribute('data-id');

@@ -12,7 +12,6 @@ if(process.env.DATABASE_URL){
     {
       host: 'localhost',
       dialect: 'postgres',
-      port: 3306,
     }
   );
 }
