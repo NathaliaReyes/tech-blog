@@ -11,8 +11,8 @@ This project, titled "Tech Blog", is a CMS-style blog site similar to a WordPres
 Entity Relationship Diagram:
 📍![ERD](/assets/D-E-R.png)
 
-Link to the application deployed using Render:
-[APPEARANCE-APPLICATION](https://tech-blog-p9ue.onrender.com)
+Application deployed using Render:
+[LINK-APPLICATION](https://tech-blog-p9ue.onrender.com)
 
 ## Table of Contents
 - [📖tech-blog](#tech-blog)
