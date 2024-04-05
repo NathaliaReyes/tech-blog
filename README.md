@@ -70,7 +70,7 @@ Some material and concepts used in this challenge were learned from the [Univers
 - **Node.js** 
 - **Sequelize.js** 
 - **PostgreSQL**
-- **ByCrypst**
+- **bcrypt**
 - **Express.js**
 
 ## License
